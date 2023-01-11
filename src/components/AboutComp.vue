@@ -23,8 +23,4 @@ p {
   font-size: 30px;
   font-family: Pacifico;
 }
-#resume {
-  margin-top: -100px;
-  padding: 100px;
-}
 </style>
