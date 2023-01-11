@@ -1,14 +1,14 @@
 <template>
     <h1 class="colorblue">Testimonials</h1><br><br><br>
-    <div v-for="item in testimonial" class="container" :key="items">
-        <div class="card">
-          <img :src=item.image alt="Character" style="width:100%">
-          <div class="contain">
-            <h3>{{item.name}}</h3> 
-            <p style="font-family: 'Delius', cursive;">{{item.message}}</p> 
+        <div class="container">
+          <div class="card" v-for="item in testimonial" :key="items">
+            <img :src=item.image alt="Character" style="width:100%">
+            <div class="contain">
+              <h3>{{item.name}}</h3> 
+              <p style="font-family: 'Delius', cursive;">{{item.message}}</p> 
+            </div>
           </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -16,6 +16,7 @@ export default {
   name: 'testimonial',
   data() {
     return {
+      loaded: false,
       testimonial: [
       {
         name: "Sive",
@@ -54,17 +55,24 @@ export default {
 </script>
 
 <style scoped>
+h1{
+  width: 85vw;
+  margin: auto;
+}
 h3{
   font-family: Pacifico;
 }
 .container{
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  gap: 50px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   height: 10%;
-  width: 20%;
+  width: 60%;
   border-radius: 5px;
 }
 
@@ -77,5 +85,6 @@ img {
 }
 .contain{
   padding: 20px;
+  background-color: white;
 }
 </style>

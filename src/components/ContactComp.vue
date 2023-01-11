@@ -59,7 +59,7 @@ export default {
 }
 .submit:hover {
     cursor: pointer;
-    background-color: #642599;
+    background-color: transparent;
     border: 2px solid #2d2d2d;
     transition: 0.5s;
     color: #2d2d2d;
@@ -74,7 +74,7 @@ export default {
     font-family: Pacifico;
     font-weight: 400;
     font-size: 20px;
-    color: #9b9b9b;
+    color: #e7e7e7;
     line-height: 1.5;
 }
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {

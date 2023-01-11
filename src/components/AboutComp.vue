@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style scoped>
+h1{
+  width: 85vw;
+  margin: auto;
+}
 p {
   margin: auto;
   width: 30rem;

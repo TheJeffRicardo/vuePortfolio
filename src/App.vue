@@ -21,6 +21,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-image: linear-gradient(to bottom, #4CDDC5, rgba(0, 64, 154, 0.792));
+
 }
 
 nav {
@@ -34,10 +36,10 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #e7e7e7;
 }
 nav a:hover {
-  color: #42b983;
+  color: #e7e7e7;
   transition: 0.2s;
 }
 </style>

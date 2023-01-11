@@ -28,11 +28,11 @@
               </div>
             </div>
                 <button class="carousel-control-prev" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span><i class="bi bi-arrow-left-circle-fill text-black" aria-hidden="true"></i></span>
+                    <span><i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span><i class="bi bi-arrow-right-circle-fill text-black" aria-hidden="true"></i></span>
+                    <span><i class="bi bi-arrow-right-circle-fill" aria-hidden="true"></i></span>
                     <span class="visually-hidden">Next</span>
                 </button>
   </section>
@@ -46,7 +46,7 @@ export default {
       firstCar: [
         {
         name: "Calculator",
-        image: "https://i.postimg.cc/NG1ZMvYY/calculator.webp",
+        image: "https://i.postimg.cc/zvJ11pHK/calculator-removebg-preview.png",
         github: "https://github.com/TheJeffRicardo/Calculator.git",
         netlify: "https://jeffscalculator.netlify.app/"
       }
@@ -78,7 +78,7 @@ export default {
       },
       {
         name: "Array for Information",
-        image: "https://i.postimg.cc/0y8z3v5N/big-red-button.webp",
+        image: "https://i.postimg.cc/4xc2BVmg/big-red-button-removebg-preview.png",
         github: "https://github.com/TheJeffRicardo/Button-for-Array.git",
         netlify: "https://array-for-buttons.netlify.app/"
       },
