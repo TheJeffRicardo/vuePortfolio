@@ -30,11 +30,11 @@
   <button class="carousel-control-prev" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span><i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i></span>
     <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span><i class="bi bi-arrow-right-circle-fill" aria-hidden="true"></i></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+  </button>
+  <button class="carousel-control-next" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span><i class="bi bi-arrow-right-circle-fill" aria-hidden="true"></i></span>
+    <span class="visually-hidden">Next</span>
+  </button>
   </section>
 </template>
 
@@ -109,6 +109,20 @@ export default {
   opacity: 1;
   cursor: pointer;
 }
+.links .netlify{
+  margin: 5px;
+}
+.links .github{
+  margin: 5px;
+}
+.carousel-control-prev {
+  height: 50%;
+  margin: auto;
+}
+.carousel-control-next {
+  height: 50%;
+  margin: auto;
+}
 .carousel-control-prev i {
   font-size: 2rem;
 }
@@ -122,5 +136,60 @@ export default {
 .links .github:hover {
   font-size: 20px;
   transition: 0.2s;
+}
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .container-fluid{
+    height: 55vh;
+  }
+.carousel-control-prev i {
+  font-size: 1.4rem;
+}
+.carousel-control-next i {
+  font-size: 1.4rem;
+}
+.links i{
+  font-size: 0.6rem;
+}
+.links .netlify{
+  margin: 5px;
+  font-size: 0px;
+}
+.links .github{
+  margin: 5px;
+  font-size: 0px;
+}
+.links .netlify:hover {
+  font-size: 20px;
+  transition: 0.2s;
+}
+.links .github:hover {
+  font-size: 20px;
+  transition: 0.2s;
+}
+}
+@media screen and (min-width: 450px) and (max-width: 720px) {
+.carousel-item img{
+  width: 15rem;
+  height: 18rem;
+}
+.carousel-control-prev {
+  font-size: 1.9rem;
+  height: 100%;
+  margin-top: 25%;
+}
+.carousel-control-next {
+  font-size: 1.9rem;
+  height: 100%;
+  margin-top: 25%;
+}
+.carousel-control-prev i {
+  font-size: 1.9rem;
+}
+.carousel-control-next i {
+  font-size: 1.9rem;
+}
+.links i{
+  font-size: 1rem;
+}
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
+    <h1 class="colorpurple">Contact Me</h1>
   <section id="contact">
     <div class="contact container-fluid">
         <div class="row">
-                <h1 class="colorpurple">Contact Me</h1>
         </div>
         <div class="row">
                 <h4 style="text-align:center">I'd love to hear from you!</h4>
@@ -49,9 +49,9 @@ export default {
 </script>
 
 <style>
-#contact{
-    margin-top: -100px;
-    padding: 100px;
+h1{
+    width: 85vw;
+    margin: auto;
 }
 .colorpurple {
     animation: heading2 5s infinite;
@@ -149,6 +149,24 @@ input[type=checkbox]:checked + label {
     color: #f00;
     font-style: normal;
 }
+@media screen and (min-width: 300px) and (max-width: 450px) {
+.contact h4 {
+    font-weight: 400;
+    font-size: 15px;
+}
+.styled-input {
+    width: 247px;
+}
+}
+@media screen and (min-width: 450px) and (max-width: 720px) {
+    .contact h4 {
+        font-size: 25px;
+    }
+    .styled-input {
+        width: 397px;
+    }
+}
+ 
   @keyframes heading2 {
     25%{
         box-shadow: 10px 2px 10px 1px #2d2d2d;

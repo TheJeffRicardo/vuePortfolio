@@ -56,6 +56,21 @@ h1 {
   transform: rotateY(180deg);
   transition: 2s;
 }
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  h1{
+    font-size: 40px;
+  }
+  .home p{
+    font-size: 20px;
+  }
+  .home img{
+    width: 20px;
+  }
+  .container{
+    height: 63vh;
+  }
+}
 @keyframes heading {
   25%{
       box-shadow: 10px 2px 10px 1px #642599;

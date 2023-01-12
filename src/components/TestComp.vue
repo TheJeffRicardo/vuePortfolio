@@ -90,4 +90,36 @@ img {
   padding: 20px;
   background-color: white;
 }
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .card {
+    height: 10%;
+    width: 150%;
+    border-radius: 5px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .contains{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,50%);
+    margin-left: 40px;
+    height: 470vh;
+  }
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+}  
+@media screen and (min-width: 450px) and (max-width: 720px) {
+  .card {
+    width: 65%;
+  }
+  .contains{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,53%);
+    margin-left: 6%;
+    gap: 5px;
+  }
+}
 </style>

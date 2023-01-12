@@ -32,5 +32,18 @@ p {
   font-family: Pacifico;
   height: 30.7rem;
 }
-
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  p{
+    width: 15rem;
+    font-size: 20px;
+    height: 38rem;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 720px) {
+  p{
+    width: 25rem;
+    font-size: 26px;
+    height: 51rem;
+  }
+}
 </style>
