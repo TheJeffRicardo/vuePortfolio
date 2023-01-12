@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1>Home</h1>
+    <h1 class="colorpurple">Home</h1>
     <div class="items">
       <div class="home">
         <img src="https://i.postimg.cc/fTK2t1C9/DSC-3528.jpg" class="img-thumbnail rounded-4 w-50" alt="Jeff">
@@ -28,7 +28,9 @@ h1 {
   font-family: none;
   font-size: 72px;
   text-align: center;
-  animation: heading 5s infinite;
+}
+.colorpurple {
+  animation: heading2 5s infinite;
   animation-direction: alternate;
 }
 .items {

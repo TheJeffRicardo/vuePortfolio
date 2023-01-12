@@ -1,35 +1,35 @@
 <template>
-<h1 class="colorblue">Projects</h1>
+<h1 class="colorpurple">Projects</h1>
 <section id="project" class="container-fluid">
-            <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" v-for="item in firstCar" :key="item">
-                  <img :src=item.image class="d-block" alt="Sorry">
-                  <div class="links">
-                    <a class="netlify btn text-white" style="background-color: #dd4b39;" :href=item.netlify role="button">
-                      <i class="bi bi-google"></i>
-                    </a>
-                    <a class="github btn text-white" style="background-color: #333333;" :href=item.github role="button">
-                      <i class="bi bi-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="carousel-item" v-for="item in projects" :key="items">
-                  <img :src=item.image class="d-block" alt="Sorry">
-                  <div class="links">
-                    <a class="netlify btn text-white" style="background-color: #dd4b39;" :href=item.netlify role="button">
-                      <i class="bi bi-google"></i>
-                    </a>
-                    <a class="github btn text-white" style="background-color: #333333;" :href=item.github role="button">
-                      <i class="bi bi-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-                <button class="carousel-control-prev" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span><i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i></span>
-                    <span class="visually-hidden">Previous</span>
+  <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" v-for="item in firstCar" :key="item">
+        <img :src=item.image class="d-block" alt="Sorry">
+        <div class="links">
+          <a class="netlify btn text-white" style="background-color: #dd4b39;" :href=item.netlify role="button">
+            <i class="bi bi-google"></i>
+          </a>
+          <a class="github btn text-white" style="background-color: #333333;" :href=item.github role="button">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item" v-for="item in projects" :key="items">
+        <img :src=item.image class="d-block" alt="Sorry">
+        <div class="links">
+          <a class="netlify btn text-white" style="background-color: #dd4b39;" :href=item.netlify role="button">
+            <i class="bi bi-google"></i>
+          </a>
+          <a class="github btn text-white" style="background-color: #333333;" :href=item.github role="button">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span><i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i></span>
+    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span><i class="bi bi-arrow-right-circle-fill" aria-hidden="true"></i></span>
@@ -92,7 +92,9 @@ export default {
 #project{
   padding: 50px;
 }
-.colorblue {
+.colorpurple {
+  animation: heading2 5s infinite;
+  animation-direction: alternate;
   width: 85vw;
   margin: auto;
 }

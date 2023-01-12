@@ -1,6 +1,6 @@
 <template>
-    <h1 class="colorblue">Testimonials</h1><br><br><br>
-        <div class="container">
+    <h1 class="colorpurple">Testimonials</h1><br><br><br>
+        <div class="contains">
           <div class="card" v-for="item in testimonial" :key="items">
             <img :src=item.image alt="Character" style="width:100%">
             <div class="contain">
@@ -16,31 +16,30 @@ export default {
   name: 'testimonial',
   data() {
     return {
-      loaded: false,
       testimonial: [
-      {
-        name: "Sive",
-        image: "https://i.postimg.cc/ZqxyPCjY/0f15ec292db237409b7171ce413b7be3.png",
-        message: "KonkeJeff RicardoMalindi is always helpful whenever he is called upon. He is not afraid to voice his opinion or ask a difficulty question in order to make progress with an issue. He is dedicated to doing great work and creates a decent and supportive environment."
-      },
-      {
-        name: "Brandon",
-        image: "https://i.postimg.cc/Gh6Yb0HR/6db9e3efac23d40cb18166dc64f90e10.png",
-        message: "KonkeJeff RicardoMalindi is one of the most intelligent people I know.",
-      },
-      {
-        name: "Lindokuhle",
-        image: "https://i.postimg.cc/43Pm7jNm/1236437.jpg",
-        message: "Konke is a very open minded individual, who is determined to do what is expected of him.",
-      },
-      {
-        name: "Luntu",
-        image: "https://i.postimg.cc/nLXhrr5w/1258531.jpg",
-        message: "KonkeJeff RicardoMalindi is, a very energetic and friendly, which makes him easy to approach.He is always willing to help out whenever there is a problem that needs fixing which.",
-      },
-      {
-        name: "Maxwill",
-        image: "https://i.postimg.cc/FRnbcYsd/Yusuke-29-1.webp",
+        {
+          name: "Brandon",
+          image: "https://i.postimg.cc/Gh6Yb0HR/6db9e3efac23d40cb18166dc64f90e10.png",
+          message: "KonkeJeff RicardoMalindi is one of the most intelligent people I know.",
+        },
+        {
+          name: "Lindokuhle",
+          image: "https://i.postimg.cc/43Pm7jNm/1236437.jpg",
+          message: "Konke is a very open minded individual, who is determined to do what is expected of him.",
+        },
+        {
+          name: "Luntu",
+          image: "https://i.postimg.cc/nLXhrr5w/1258531.jpg",
+          message: "KonkeJeff RicardoMalindi is, a very energetic and friendly, which makes him easy to approach.He is always willing to help out whenever there is a problem that needs fixing which.",
+        },
+        {
+          name: "Sive",
+          image: "https://i.postimg.cc/ZqxyPCjY/0f15ec292db237409b7171ce413b7be3.png",
+          message: "KonkeJeff RicardoMalindi is always helpful whenever he is called upon. He is not afraid to voice his opinion or ask a difficulty question in order to make progress with an issue. He is dedicated to doing great work and creates a decent and supportive environment."
+        },
+        {
+          name: "Maxwill",
+          image: "https://i.postimg.cc/FRnbcYsd/Yusuke-29-1.webp",
         message: "When I first met Konke I saw him as a very charismatic and driven person. He still shows the same characteristics. He is a team player and shows consistency with his work. He is hardworking and shows the quality of a great leader.",
       },
       {
@@ -59,13 +58,17 @@ h1{
   width: 85vw;
   margin: auto;
 }
+.colorpurple {
+  animation: heading2 5s infinite;
+  animation-direction: alternate;
+}
 h3{
   font-family: Pacifico;
 }
-.container{
+.contains{
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 10%;
   gap: 50px;
 }
 .card {
