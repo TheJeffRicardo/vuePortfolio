@@ -11,7 +11,7 @@
         </nav>
     </div>
 </template>
-<script>
+<script scoped>
 export default {
     name: 'navbar'
 }
@@ -33,6 +33,27 @@ export default {
  .nav img:hover{
     animation: spin 4s infinite linear;
  }
+ 
+ @media screen and (max-width: 300px){
+    .nav img {
+        display: none;
+    }
+ }
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .nav img {
+      display: none;
+    }
+  }  
+@media screen and (min-width: 450px) and (max-width: 670px) {
+    .nav img {
+        display: none;
+      }
+  }
+@media screen and (min-width: 720px) and (max-width: 1048px) {
+    .nav img {
+        border-radius: 5px 5px 0 0;
+      }
+}
  @keyframes spin{
     from{
         transform: rotate(0deg);
