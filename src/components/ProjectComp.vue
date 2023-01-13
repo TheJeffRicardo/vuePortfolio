@@ -174,12 +174,12 @@ export default {
 }
 .carousel-control-prev {
   font-size: 1.9rem;
-  height: 100%;
+  height: 55%;
   margin-top: 25%;
 }
 .carousel-control-next {
   font-size: 1.9rem;
-  height: 100%;
+  height: 55%;
   margin-top: 25%;
 }
 .carousel-control-prev i {

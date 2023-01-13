@@ -166,6 +166,13 @@ input[type=checkbox]:checked + label {
         width: 397px;
     }
 }
+@media screen and (min-width: 720px) and (max-width: 768px) {
+    
+.styled-input {
+    width: 625px;
+}
+}
+ 
  
   @keyframes heading2 {
     25%{

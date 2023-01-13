@@ -122,4 +122,12 @@ img {
     gap: 5px;
   }
 }
+@media screen and (min-width: 720px) and (max-width: 1048px) {
+  .card {
+    height: 10%;
+    width: 90%;
+    gap: 0;
+  }
+}
+  
 </style>

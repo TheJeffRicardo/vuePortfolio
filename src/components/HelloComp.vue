@@ -32,6 +32,8 @@ h1 {
 .colorpurple {
   animation: heading2 5s infinite;
   animation-direction: alternate;
+  width: 85vw;
+  margin: auto;
 }
 .items {
   transform-style: preserve-3d;
@@ -71,6 +73,23 @@ h1 {
     height: 63vh;
   }
 }
+@media screen and (min-width: 450px) and (max-width: 720px) {
+  .colorpurple {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 975px) {
+  .colorpurple {
+    width: 65vw;
+  }
+}
+@media screen and (min-width: 975px) and (max-width: 992px) {
+  .colorpurple {
+    width: 75vw;
+  }
+}
+ 
+  
 @keyframes heading {
   25%{
       box-shadow: 10px 2px 10px 1px #642599;
